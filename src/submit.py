@@ -22,11 +22,13 @@ commit_message = sys.argv[3] if len(sys.argv) >= 4 else f"add {problem_name}"
 
 
 destination_folder = submissions_folder / problem_name
-destination_submission = destination_folder / f"{submission_name}.py"
-
-
-
 destination_folder.mkdir(parents=True, exist_ok=True)
+
+
+files = list(destination_folder.iterdir())
+submission_order = len(files)
+
+destination_submission = destination_folder / f"{submission_name}-{submission_order}.py"
 copy(submission_file, destination_submission)
 
 
