@@ -2,7 +2,7 @@
 
 In this repo I aim to do the following 
 - store my neetcode 150 submissions in an ordered way , multiple submissions if multiple methods are used 
-- automate the process of submitting , using a script that takes the problem name and code and it auto does : 
+- automate the process of submitting , using a script that takes the problem name and code and it auto does 
     - create the problems folder 
     - creates the submission.py of that problem under a custom name or an incremented automated one 
     - stages cmmit and pushes it to github with a meaningful commit message 
