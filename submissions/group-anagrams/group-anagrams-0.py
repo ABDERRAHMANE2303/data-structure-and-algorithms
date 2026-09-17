@@ -17,6 +17,3 @@ class Solution:
             out.append(group)
 
         return out
-
-            
-                
