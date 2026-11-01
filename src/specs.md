@@ -23,3 +23,5 @@ The script should then:
 4. Stage the changes.
 5. Commit them.
 6. Push them to the repository.
+
+
