@@ -1,12 +1,42 @@
-## My DSA journey
+## - DSA practice & notes
 
-In this repo I aim to do the following 
-- store my neetcode 150 submissions in an ordered way , multiple submissions if multiple methods are used 
-- automate the process of submitting , using a script that takes the problem name and code and it auto does 
-    - create the problems folder 
-    - creates the submission.py of that problem under a custom name or an incremented automated one 
-    - stages cmmit and pushes it to github with a meaningful commit message 
-- include docs or cheatsheets which will contain both my syntaxe and potentially dsa cheatsheets , so i can quickly get back to the level i stopped at from them directly 
-- future enhancements might be support for multiple languages in the submissions more documentations ... but for now this is enough scope 
+In this repo I aim to do the following:
 
-why do all this ? cuz neetcode premium is required to keep the repo of submissions private which is what i want for now , and for more customizability perhaps , but really , just cuz i can . 
+- Store the DSA problems I work on in one place.
+- Automate the submission process using a script that takes the problem name, submission name (optional), and target language. It automatically:
+  - Creates the problem/language folders.
+  - Copies the current submission into the appropriate folder, using a custom name or an incremented one.
+  - Stages, commits, and pushes to GitHub with a meaningful commit message.
+- Include docs and cheatsheets containing syntax references and DSA concepts, so I can quickly get back to the level I stopped at.
+
+## How to use
+
+From the repository root, run:
+
+```bash
+python3 src/submit.py <problem-name> [submission-name] --language <language> [--message <commit-message>]
+```
+
+Example:
+
+```bash
+python3 src/submit.py two-sum --language python
+python3 src/submit.py two-sum optimized --language java --message "Add optimized solution"
+```
+
+## Project structure
+
+```text
+.
+├── src/
+│   ├── submit.py
+│   └── submission.txt
+├── submissions/
+│   └── problem-name/
+│       └── language/
+│           └── submission-name-N.ext
+└── docs/
+    └── cheatsheets/
+```
+
+
