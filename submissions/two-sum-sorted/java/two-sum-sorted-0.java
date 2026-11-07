@@ -6,6 +6,6 @@ class Solution {
             else if (numbers[left] + numbers[right] > target) right-- ;
             else left ++;
         }
-        return new int[0];
+        return new int[0]; 
     }
 }
